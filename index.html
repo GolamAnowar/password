@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!-- or -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="input-box">
+                <input type="text" disabled>
+                <i class='bx bx-copy-alt'></i>
+            </div>
+            <div class="pass-indicator"></div>
+            <div class="pass-length">
+                <div class="details">
+                    <label class="title">password length</label>
+                    <span></span>
+                </div>
+                <input type="range" min="1" max="30" step="1">
+            </div>
+            <div class="pass-setting">
+                <label class="title">password setting</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">lowercase (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">uppercase (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="number">
+                        <label for="number">number (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="Symbols">
+                        <label for="Symbols">Symbols (!-$^+)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="Exclude-Duplicate">
+                        <label for="Exclude-Duplicate">Exclude Duplicate</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="Include-Spaces">
+                        <label for="Include-Spaces">Include Spaces</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn">generate password</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
